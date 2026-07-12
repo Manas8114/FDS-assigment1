@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# FDS-assigment1
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Fundamental Data Structures — Assignment 1: Implementation and analysis of core data structures in Python/C++.
 
-## Available Scripts
+## Contents
 
-In the project directory, you can run:
+| File | Description |
+|------|-------------|
+| `array_list.py` | Dynamic array implementation with amortized analysis |
+| `linked_list.py` | Singly/doubly linked list with iterator |
+| `stack_queue.py` | Stack (array/linked) and Queue (circular buffer) |
+| `binary_tree.py` | Binary tree, BST, traversals (in/pre/post/order) |
+| `heap.py` | Min/Max heap, heapify, heapsort |
+| `hash_table.py` | Hash table with chaining/open addressing |
+| `graphs.py` | Adjacency list/matrix, BFS, DFS, Dijkstra |
+| `analysis.md` | Time/space complexity proofs |
 
-### `npm start`
+## Data Structures Covered
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **Arrays** — Dynamic resizing, amortized O(1) append
+2. **Linked Lists** — Singly, doubly, circular
+3. **Stacks** — LIFO, array + linked implementations
+4. **Queues** — FIFO, circular buffer, priority queue
+5. **Trees** — Binary, BST, AVL (bonus), traversals
+6. **Heaps** — Binary heap, heapify O(n), heapsort O(n log n)
+7. **Hash Tables** — Separate chaining, linear/quadratic probing
+8. **Graphs** — Adjacency list/matrix, BFS/DFS, shortest path
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Run
 
-### `npm test`
+```bash
+# Python
+python -m pytest tests/ -v
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# C++
+g++ -std=c++17 *.cpp -o fds && ./fds
+```
 
-### `npm run build`
+## Complexity Summary
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+| Structure | Access | Search | Insert | Delete |
+|-----------|--------|--------|--------|--------|
+| Array | O(1) | O(n) | O(n) | O(n) |
+| Linked List | O(n) | O(n) | O(1)* | O(1)* |
+| Stack | O(n) | O(n) | O(1) | O(1) |
+| Queue | O(n) | O(n) | O(1) | O(1) |
+| BST | O(log n) | O(log n) | O(log n) | O(log n) |
+| Heap | O(n) | O(n) | O(log n) | O(log n) |
+| Hash Table | O(1) | O(1) | O(1) | O(1) |
+| Graph | O(V+E) | O(V+E) | O(1) | O(1) |
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+*At head/tail
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Academic Context
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Course: Fundamental Data Structures (CS201)
+Semester: Spring 2025
+Institution: [University]
