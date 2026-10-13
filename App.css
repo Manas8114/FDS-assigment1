@@ -1,0 +1,120 @@
+/* src/styles/main.css */
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Light Mode Styles */
+.light-mode {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.light-mode input,
+.light-mode button {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+.light-mode button {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.light-mode input {
+  padding: 10px;
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 300px;
+}
+
+.light-mode button:hover {
+  background-color: #ddd;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+  background-color: #333;
+  color: #f0f0f0;
+}
+
+.dark-mode input,
+.dark-mode button {
+  background-color: #555;
+  color: #f0f0f0;
+  border: 1px solid #888;
+}
+
+.dark-mode button {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.dark-mode input {
+  padding: 10px;
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 300px;
+}
+
+.dark-mode button:hover {
+  background-color: #777;
+}
+
+.dark-mode input:focus,
+.dark-mode button:focus {
+  outline: none;
+  border-color: #ddd;
+}
+
+/* Error message */
+p {
+  font-size: 0.9rem;
+  color: red;
+  margin-top: 10px;
+}
+
+/* Additional Styles */
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+input {
+  margin-bottom: 15px;
+}
+
+button {
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
